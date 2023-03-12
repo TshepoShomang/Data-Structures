@@ -94,4 +94,18 @@ public class Array {
         }
     }
 
+    // Copying Arrays
+    public static void copy(){
+        String[] name = {"Tshepo", "Themba", "Shomang"};
+        String[] copyName = new String[name.length];
+
+        for (int i = 0; i < name.length; i++){
+            copyName[i] = name[i];
+        }
+        for (int i = 0; i < name.length; i++){
+            System.out.println(copyName[i]);
+        }
+
+    }
+
 }

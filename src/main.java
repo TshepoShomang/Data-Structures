@@ -10,5 +10,6 @@ public class main {
         array.largestNum();
         array.shuffling();
         array.shiftArray();
+        array.copy();
     }
 }
