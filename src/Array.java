@@ -38,11 +38,44 @@ public class Array {
 
     // Initializing arrays with random values
     public static void randomArray(){
-        double[] money = new double[3];
+        int[] money = new int[3];
         for (int i = 0; i < money.length; i++){
-            money[i] = Math.random() * 10;
+            money[i] = (int)Math.random() * 10;
         }
         System.out.println("You have R" + money[0]);
         System.out.println("You have R" + money[1]);
+    }
+
+    // Finding the largest number in an array
+    public static void largestNum(){
+        int[] cars = {2, 1, 10, 15, 30, 3};
+        int largestNum = cars[0];
+        for (int i = 1; i < cars.length; i++){
+            if (cars[i] > largestNum){
+                largestNum = cars[i];
+            }
+        }
+        System.out.println("Largest number of cars is " + largestNum);
+    }
+
+    // Random Shuffling
+    public static void shuffling(){
+        int[] cards = {1, 2, 3, 4, 6, 8, 9};
+        System.out.print("Before ");
+        for (int i = 0; i < cards.length; i++){
+            System.out.println(cards[i]);
+        }
+        for (int i = 0; i < cards.length; i++){
+            int j = (int) (Math.random() * cards.length);
+
+            int temp = cards[i];
+            cards[i] = cards[j];
+            cards[j] = temp;
+        }
+
+        System.out.print("After ");
+        for (int i = 0; i < cards.length; i++){
+            System.out.println(cards[i]);
+        }
     }
 }

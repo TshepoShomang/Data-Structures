@@ -7,5 +7,7 @@ public class main {
         array.arraySum();
         array.inputArray();
         array.randomArray();
+        array.largestNum();
+        array.shuffling();
     }
 }
