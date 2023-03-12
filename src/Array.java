@@ -61,7 +61,7 @@ public class Array {
     // Random Shuffling
     public static void shuffling(){
         int[] cards = {1, 2, 3, 4, 6, 8, 9};
-        System.out.print("Before ");
+        System.out.println("Before ");
         for (int i = 0; i < cards.length; i++){
             System.out.println(cards[i]);
         }
@@ -73,9 +73,25 @@ public class Array {
             cards[j] = temp;
         }
 
-        System.out.print("After ");
+        System.out.println("After ");
         for (int i = 0; i < cards.length; i++){
             System.out.println(cards[i]);
         }
     }
+
+    // Shifting Elements
+    public static void shiftArray(){
+        String[] name = {"Tshepo", "Themba", "Shomang"};
+        String temp = name[0];
+
+        for (int i = 1; i < name.length; i++){
+            name[i-1] = name[i];
+        }
+        name[name.length - 1] = temp;
+
+        for (int i = 0; i < name.length; i++){
+            System.out.println(name[i]);
+        }
+    }
+
 }

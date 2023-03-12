@@ -9,5 +9,6 @@ public class main {
         array.randomArray();
         array.largestNum();
         array.shuffling();
+        array.shiftArray();
     }
 }
